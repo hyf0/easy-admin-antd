@@ -1,0 +1,16 @@
+.basic-layout {
+  height: 100%;
+  .sider-menu-wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+  .basic-layout-main {
+    .basic-layout-header {
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    height: 100%;
+    overflow: auto;
+  }
+}

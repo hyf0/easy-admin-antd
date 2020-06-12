@@ -1,0 +1,46 @@
+{
+  "name": "easy-antd-admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server",
+    "build": "webpack --env.production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.1",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.2.0",
+    "eslint-plugin-react": "^7.20.0",
+    "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.2.1",
+    "@hot-loader/react-dom": "^16.13.0+4.12.20",
+    "antd": "^4.3.1",
+    "connected-react-router": "^6.8.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hot-loader": "^4.12.21",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}
