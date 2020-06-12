@@ -18,10 +18,12 @@ export default function Login() {
   const handleLoginBtn = useCallback(
     (evt) => {
       setIsLogining(true);
-      loginForm
-        .validateFields()
+      loginForm.validateFields()
         .then((values) => {
-          return API.user.login(values.username, values.password);
+          const {username, password} = values;
+          // const password = loginForm.getFieldValue('password');
+          console.log('username',username)
+          return API.user.login(username, password);
         })
         .then((resData) => {
           if (resData == null) throw new Error('登录失败');
@@ -56,21 +58,21 @@ export default function Login() {
         >
           <Form.Item
             name="username"
+            initialValue="admin"
             rules={[{ required: true, message: 'Please input your Username!' }]}
           >
             <Input
               prefix={<UserOutlined className="site-form-item-icon" />}
-              defaultValue="admin"
               placeholder="Username"
             />
           </Form.Item>
           <Form.Item
             name="password"
+            initialValue="admin"
             rules={[{ required: true, message: 'Please input your Password!' }]}
           >
             <Input
               prefix={<LockOutlined className="site-form-item-icon" />}
-              defaultValue="admin"
               type="password"
               placeholder="Password"
             />

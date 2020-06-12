@@ -1,6 +1,5 @@
 import React from 'react';
 
-import NotFound404 from '@/components/NotFound404';
 import AuthLayout from '@/layouts/AuthLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 import Welcome from '@/components/Welcome';
@@ -72,8 +71,8 @@ export const menuRoutes = [
             name: '三级欢迎',
             component: Welcome,
           },
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -141,7 +140,7 @@ const routes = [
   },
   {
     path: '/*',
-    component: NotFound404,
+    component: '/errorPage/NotFound404',
   },
 ];
 
