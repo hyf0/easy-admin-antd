@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{136:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return i}));var r=t(0),u=t.n(r);function i(){return u.a.createElement("div",null,"Register")}}}]);
